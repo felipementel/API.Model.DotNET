@@ -21,7 +21,7 @@ jobs:
           dotnet-version: '10.0.x'
 
       - name: Restore
-        run: dotnet restore --configuration Release --no-cache --project ./src/Usuarios.Api.slnx
+        run: dotnet restore --no-cache --project ./src/Usuarios.Api.slnx
 
       - name: Build
         run: dotnet build --configuration Release --no-restore --project ./src/Usuarios.Api.slnx
