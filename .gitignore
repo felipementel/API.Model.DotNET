@@ -1,0 +1,18 @@
+# Build output
+bin/
+obj/
+
+# Test and coverage output
+TestResults/
+coverage/
+
+# User and IDE-specific files
+.vs/
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Diagnostic files
+*.log
