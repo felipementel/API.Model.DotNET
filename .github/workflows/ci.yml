@@ -24,7 +24,7 @@ jobs:
         run: dotnet restore --no-cache
 
       - name: Build
-        run: dotnet build --configuration Release --no-restore --project ./src/Usuarios.Api.slnx
+        run: dotnet build --configuration Release --no-restore --project ./src/Usuarios.Api/Usuarios.Api.csproj
 
       - name: Test
         run: dotnet test --configuration Release --no-build --logger "trx;LogFileName=test-results.trx"
