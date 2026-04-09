@@ -24,14 +24,14 @@ jobs:
         run: dotnet restore --no-cache
 
       - name: Build
-        run: >-
+        run: |
           dotnet build \
           --configuration Release \
           --no-restore
 
       - name: Test
         run: >-
-          dotnet test \
-          --configuration Release \
-          --no-build \
+          dotnet test
+          --configuration Release
+          --no-build
           --logger "trx;LogFileName=test-results.trx"
